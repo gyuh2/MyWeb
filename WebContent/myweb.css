@@ -1,0 +1,618 @@
+@CHARSET "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css)
+
+* {
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR';
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Noto Sans KR';
+}
+ 
+/*Login*/
+.section_login{
+	width: 340px;
+	margin: 0 auto;
+	padding-top: 50px; 
+}	
+	
+.section_login .tit_login{
+	font-weight: 600;
+	font-size: 25px;
+	font-family: 'Noto Sans KR';
+	color: #333;
+	text-align: center;
+}
+
+.section_login .write_form{
+	padding-top: 25px;
+}
+
+.section_login input[type=text], .section_login input[type=password] {
+    width: 300px;
+    height: 54px;
+    padding: 0 19px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 14px;
+    font-family: 'Noto Sans KR';
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+.section_login input[type=password] {
+	margin-top: 10px;
+}
+
+
+.btn_type1 {
+    border: 1px solid #213A73;
+    background-color: #213A73;
+    margin-top: 28px;
+}
+
+.btn_type2 {
+    border: 1px solid #213A73;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.btn_type1 .txt_type {
+    color: #fff;
+}
+.btn_type2 .txt_type {
+    color: #213A73;
+}
+
+.btn_type1, .btn_type2 {
+    display: block;
+    width: 340px;
+    height: 54px;
+    border-radius: 3px;
+}
+
+.btn_type1 .txt_type, .btn_type2 .txt_type {
+    display: inline-block;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Noto Sans KR';
+    line-height: 51px;
+}
+
+/*Join*/
+.section_join {
+    width: 640px;
+    margin: 0 auto;
+    padding-top: 50px; 
+}
+
+.section_join .head_article {
+	padding: 5px 0 34px;
+}
+
+.section_join .head_article .tit_join {
+    height: 36px;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Noto Sans KR';
+    line-height: 36px;
+    color: #333;
+    text-align: center;
+    letter-spacing: -.5px;
+}
+
+.section_join .tbl {
+    width: 100%;
+    border-top: 2px solid #333;
+    padding-top: 10px;
+    font-family: 'Noto Sans KR';
+}
+
+.section_join th {
+    width: 159px;
+    padding: 20px 0 0 20px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.section_join td {
+    padding: 10px 0;
+    border-top: 0;
+    font-size: 14px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.section_join input[type=text], .section_join input[type=password] {
+    width: 412px;
+    height: 44px;
+    padding: 0 14px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    border-radius: 3px;
+    background: #fff;
+    outline: none;
+    vertical-align: top;
+    font-family: 'Noto Sans KR';
+}
+
+.section_join .select_gender label {
+    display: inline-block;
+    padding: 10px 52px 10px 0;
+    vertical-align: top;
+}
+
+.section_join input[type=radio] {
+    position: absolute;
+    opacity: 0;
+}
+
+.section_join input[type=radio]:checked+.ico {
+    border: 1px solid #213A73;
+    background-color: #213A73;
+}
+
+.section_join input[type=radio]+.ico {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 100%;
+    vertical-align: -7px;
+}
+
+.section_join input[type=radio]:checked+.ico:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    margin: -5px 0 0 -5px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+.section_join .btn_join1, .btn_join2 {
+    width: 240px;
+    height: 56px;
+    margin-top: 28px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Noto Sans KR';    
+}
+
+.section_join .btn_join1 {
+	float: left;
+	margin-left: 73px;
+    border: 1px solid #213A73;
+    background-color: #fff;
+    color: #213A73;
+}
+
+.section_join .btn_join2 {
+	display: inline-block;
+	margin-left: 14px;
+	margin-right: 73px;
+    border: 1px solid #213A73;
+    background-color: #213A73;
+    color: #fff;
+}
+
+/*modify*/
+.section_mod {
+    width: 640px;
+    margin: 0 auto;
+    padding-top: 50px; 
+}
+
+.section_mod .head_article {
+	padding: 5px 0 34px;
+}
+
+.section_mod .head_article .tit_mod {
+    height: 36px;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Noto Sans KR';
+    line-height: 36px;
+    color: #333;
+    text-align: center;
+    letter-spacing: -.5px;
+}
+
+.section_mod .tbl {
+    width: 100%;
+    border-top: 2px solid #333;
+    padding-top: 10px;
+    font-family: 'Noto Sans KR';
+}
+
+.section_mod th {
+    width: 159px;
+    padding: 20px 0 0 20px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.section_mod td {
+    padding: 10px 0;
+    border-top: 0;
+    font-size: 14px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.section_mod input[type=text], .section_mod input[type=password] {
+    width: 412px;
+    height: 44px;
+    padding: 0 14px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    border-radius: 3px;
+    background: #fff;
+    outline: none;
+    vertical-align: top;
+    font-family: 'Noto Sans KR';
+}
+
+.section_mod .btn_join1, .btn_join2 {
+    width: 240px;
+    height: 56px;
+    margin-top: 28px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Noto Sans KR';    
+}
+
+.section_mod .btn_join1 {
+	float: left;
+	margin-left: 73px;
+    border: 1px solid #213A73;
+    background-color: #fff;
+    color: #213A73;
+}
+
+.section_mod .btn_join2 {
+	display: inline-block;
+	margin-left: 14px;
+	margin-right: 73px;
+    border: 1px solid #213A73;
+    background-color: #213A73;
+    color: #fff;
+}
+
+/*delete*/
+.section_delete {
+    width: 640px;
+    margin: 0 auto;
+    padding-top: 50px; 
+}
+
+.section_delete .head_article {
+	padding: 5px 0 34px;
+}
+
+.section_delete .head_article .tit_delete {
+    height: 36px;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Noto Sans KR';
+    line-height: 36px;
+    color: #333;
+    text-align: center;
+    letter-spacing: -.5px;
+}
+
+.section_delete .tbl {
+    width: 100%;
+    border-top: 2px solid #333;
+    padding-top: 10px;
+    font-family: 'Noto Sans KR';
+}
+
+.section_delete .tbl .info {
+	padding: 0 0 0 20px;
+	color: #213A73;
+}
+
+.section_delete th {
+    width: 159px;
+    padding: 20px 0 0 20px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.section_delete td {
+    padding: 10px 0;
+    border-top: 0;
+    font-size: 14px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.section_delete input[type=password] {
+    width: 412px;
+    height: 44px;
+    padding: 0 14px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    border-radius: 3px;
+    background: #fff;
+    outline: none;
+    vertical-align: top;
+    font-family: 'Noto Sans KR';
+}
+
+.section_delete .btn_join1, .btn_join2 {
+    width: 240px;
+    height: 56px;
+    margin-top: 28px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Noto Sans KR';    
+}
+
+.section_delete .btn_join1 {
+	float: left;
+	margin-left: 73px;
+    border: 1px solid #213A73;
+    background-color: #fff;
+    color: #213A73;
+}
+
+.section_delete .btn_join2 {
+	display: inline-block;
+	margin-left: 14px;
+	margin-right: 73px;
+    border: 1px solid #213A73;
+    background-color: #213A73;
+    color: #fff;
+}
+
+/*list*/
+.section_list {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px; 
+}
+
+.section_list .head_article {
+	padding: 5px 0 34px;
+}
+
+.section_list .head_article .tit_list {
+    height: 36px;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Noto Sans KR';
+    line-height: 36px;
+    color: #333;
+    text-align: center;
+    letter-spacing: -.5px;
+}
+
+
+.section_list table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+.section_list td, th {
+	font-family: 'Noto Sans KR';
+	height: 30px;
+}
+
+.section_list th {
+	font-size: 10pt;
+	background-color: #213A73;
+	color: white;
+	padding: 10px;
+}
+
+.section_list td {
+	font-size: 10pt;
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
+}
+
+.section_list tr:hover {
+	background-color: #ddd;
+}
+
+/*index*/
+li {
+	list-style-type: non
+}
+
+.header {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: #fff;
+	padding: 25px 0px 25px 0px;
+}
+
+.header .menu a {
+	float: right;
+    display: block;
+    color: #213A73;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header .logo a {
+    float: left;
+}
+
+.header .menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+	border-top: 1px solid #dbdbdb;
+    background-color: #fff;
+    padding-bottom: 100px; 
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.footer {
+	float: left;
+  	background-color: #f7f7f7;
+    width: 100%;
+    padding: 40px 15px;
+    letter-spacing: -0.5px;
+}
+
+.footer p {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    color: #999;
+}
+
+.footer p span {
+    color: #213A73;
+}
+
+/*index*/
+.section_img { 
+	height: 400px; 
+	padding-bottom: 75px;
+} 
+
+.slide {
+	position: absolute; 
+	height: 400px; 
+	width: 100%; 
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: contain; 
+} 
+
+.img1 {
+	background-image: url(img/baewha1.jpg); 
+	animation: slide_img_1 15s infinite;
+} 
+.img2 { 
+	background-image: url(img/baewha2.jpg); 
+	animation: slide_img_2 15s infinite; 
+} 
+
+@keyframes slide_img_1 { 
+	0% { 
+		opacity: 1; 
+	} 
+
+	12% { 
+		opacity: 1; 
+	} 
+	
+	23% { 
+		opacity: 1; 
+	} 
+	
+	34% { 
+		opacity: 1; 
+	} 
+	
+	45% { 
+		opacity: 1; 
+	} 
+	
+	56% { 
+		opacity: 0; 
+	} 
+	
+	67% { 
+		opacity: 0; 
+	} 
+	
+	78% { 
+	o	pacity: 0; 
+	} 
+	
+	89% { 
+	opacity: 0; 
+		} 
+	
+	100% {
+		opacity: 0; 
+	} 
+} 
+
+@keyframes slide_img_2 { 
+	0% { 
+		opacity: 0; 
+	} 
+	
+	12% { 
+		opacity: 0; 
+	} 
+	
+	23% { 
+		opacity: 0; 
+	} 
+	
+	34% { 
+		opacity: 0; 
+	} 
+	
+	45% { 
+		opacity: 0; 
+	} 
+	
+	56% { 
+		opacity: 1; 
+	} 
+	
+	67% { 
+		opacity: 1; 
+	} 
+	
+	78% { 
+		opacity: 1; 
+	} 
+	
+	89% { 
+		opacity: 1; 
+	} 
+	
+	100% { 
+		opacity: 1; 
+	} 
+} 
